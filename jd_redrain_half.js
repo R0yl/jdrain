@@ -137,7 +137,7 @@ function taskUrl(function_id, body = {}) {
   }
 }
 
-function getRedRainIds(url = "http://adguard.ipq.co/redrain_half.json") {
+function getRedRainIds(url = "http://www.mseweb.tk/redrain_half.json") {
   return new Promise(async resolve => {
     const options = {
       url: `${url}?${new Date()}`, "timeout": 10000, headers: {
