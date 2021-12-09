@@ -2,21 +2,17 @@
 整点京豆雨
 更新时间：2021-12-8
 脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
-########################################################################
-可自行设置整点京豆雨ID环境变量jd_redrain_activityId，多个ID用@连接，格式如下
-export jd_redrain_activityId="ID1@ID2@ID3"
-########################################################################
 ==============Quantumult X==============
 [task_local]
 #整点京豆雨
-0 0-23/1 * * * https://raw.githubusercontent.com/msechen/jdrain/main/jd_live_redrain.js, tag=整点京豆雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 * * * * https://raw.githubusercontent.com/msechen/jdrain/main/jd_redrain.js, tag=整点京豆雨, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 ==============Loon==============
 [Script]
-cron "0 0-23/1 * * *" script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_live_redrain.js,tag=整点京豆雨
+cron "0 * * * *" script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_redrain.js,tag=整点京豆雨
 ================Surge===============
-整点京豆雨 = type=cron,cronexp="0 0-23/1 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_live_redrain.js
+整点京豆雨 = type=cron,cronexp="0 * * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_redrain.js
 ===============小火箭==========
-整点京豆雨 = type=cron,script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_live_redrain.js, cronexpr="0 0-23/1 * * *", timeout=3600, enable=true
+整点京豆雨 = type=cron,script-path=https://raw.githubusercontent.com/msechen/jdrain/main/jd_redrain.js, cronexpr="0 * * * *", timeout=3600, enable=true
 */
 const $ = new Env('整点京豆雨');
 let allMessage = '', id = '';
