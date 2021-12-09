@@ -66,11 +66,11 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
         await receiveRedRain(id);
       }
     }
+  }
   if (allMessage) {
     if ($.isNode()) await notify.sendNotify(`${$.name}`, `${allMessage}`);
     $.msg($.name, '', allMessage);
   }
-}
 })()
     .catch((e) => {
       $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
