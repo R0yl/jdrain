@@ -85,11 +85,11 @@ if ($.isNode()) {
       await noahRedRainLottery();
       }
     }
-  if (allMessage) {
+  }
+ if (allMessage) {
     if ($.isNode()) await notify.sendNotify(`${$.name}`, `${allMessage}`);
     $.msg($.name, '', allMessage);
-  }
-}
+ }
 })()
     .catch((e) => {
       $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
