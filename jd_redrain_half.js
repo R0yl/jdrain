@@ -38,7 +38,7 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
   }
     let hour = (new Date().getUTCHours() + 8) % 24;
     $.log(`\n正在远程获取${hour}点30分京豆雨ID\n`);
-    await $.wait(5000);
+    await $.wait(1000);
     let redIds = await getRedRainIds();
     if (!redIds.length) {
     $.log(`\n今日龙王🐲出差，天气晴朗☀️，改日再来～\n`);
