@@ -79,13 +79,6 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
       $.done();
     })
 
-function showMsg() {
-  return new Promise(resolve => {
-    $.msg($.name, '', `【京东账号${$.index}】${$.nickName}\n${message}`);
-    resolve()
-  })
-}
-
 function receiveRedRain(actId) {
   return new Promise(resolve => {
     const body = { actId };
