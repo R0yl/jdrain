@@ -2,7 +2,7 @@
 
 整点京豆雨脚本跑ID有两种方式，两种方式自动二选一： 
 
-一、可自行抓京豆雨RRA，设置环境变量跑ID，适配user.py监控bot（详见https://github.com/chiupam/JD_Diy） 
+一、可自行抓京豆雨RRA，设置环境变量跑ID，适配user.py(本库有模板)监控bot（详见https://github.com/chiupam/JD_Diy） 
 
 环境变量名称jd_redrain_activityId,支持跑一个或多个RRAID，多个RRAID用@连接、设置格式如下：
 
