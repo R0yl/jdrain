@@ -11,5 +11,5 @@ export jd_redrain_activityId="RRAID1@RRAID2@RRAID3"
 二、可远程更新本库的json文件跑ID 
 
 
-脚本发布频道 https://t.me/jdredrain 交流群 https://t.me/+xfWwiMAFonwzZDFl
+脚本发布频道 https://gitee.com/msewb/jdrain 交流群 https://t.me/+xfWwiMAFonwzZDFl
 
